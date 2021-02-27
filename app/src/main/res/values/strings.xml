@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ActivtyExample</string>
+    <string name="login_using_intent">Login Using Intent</string>
+    <string name="shared_preference">Shared Preference</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="login">Login</string>
+
 </resources>

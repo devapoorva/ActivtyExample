@@ -7,6 +7,9 @@ import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+
+import com.apoorv.activtyexample.ui.login.LoginActivity;
 
 /**
  * Created by Apoorv Vardhman on 2/25/2021
@@ -23,10 +26,15 @@ public class FirstActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_activity);
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+        findViewById(R.id.card_intent).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FirstActivity.this, LoginActivity.class));
+            }
+        });
+
     }
 
-    public void goToSecond(View view) {
-        Intent intent = new Intent(FirstActivity.this,SecondActivity.class);
-        startActivity(intent);
-    }
 }

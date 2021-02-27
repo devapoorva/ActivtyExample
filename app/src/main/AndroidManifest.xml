@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ActivtyExample">
         <activity android:name=".SecondActivity"></activity>
+        <activity android:name=".ui.login.LoginActivity"></activity>
         <activity android:name=".FirstActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
