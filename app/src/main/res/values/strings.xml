@@ -5,5 +5,7 @@
     <string name="enter_mobile_number">Enter Mobile Number</string>
     <string name="enter_password">Enter Password</string>
     <string name="login">Login</string>
+    <string name="proceed">Proceed</string>
+    <string name="enter_something">Enter Something</string>
 
 </resources>

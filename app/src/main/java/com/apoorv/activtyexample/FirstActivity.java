@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
 import com.apoorv.activtyexample.ui.login.LoginActivity;
+import com.apoorv.activtyexample.ui.shared_preference.SharedPreferenceActivity;
 
 /**
  * Created by Apoorv Vardhman on 2/25/2021
@@ -32,6 +33,15 @@ public class FirstActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(FirstActivity.this, LoginActivity.class));
+            }
+        });
+
+        findViewById(R.id.card_shared_preference).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FirstActivity.this, SharedPreferenceActivity.class);
+                intent.putExtra("name","Afreen");
+                startActivity(intent);
             }
         });
 
